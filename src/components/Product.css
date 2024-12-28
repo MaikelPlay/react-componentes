@@ -1,0 +1,51 @@
+.box-product {
+    margin-bottom: 48px;
+}
+.box-product .product-header {
+    margin-bottom: 30px;
+}
+.box-product .product-link {
+    display: block;
+}
+.box-product .product-image {
+    display: block;
+    width: 100%;
+    border-bottom: 6px solid #2b1e19;
+    border-radius: 6px;
+    transition: 0.3s all ease;
+}
+.box-product:hover .product-image {
+    border-bottom: 6px solid #d6c693;
+}
+.box-product .product-title {
+    margin-bottom: 20px;
+    font: 400 19px/24px "Voltaire", sans-serif;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.37);
+    text-transform: uppercase;
+    color: #2b1e19;
+}
+.box-product .product-link {
+    color: #2b1e19;
+}
+.box-product .product-link:hover {
+    color: #f3452a;
+}
+.box-product .btn-product {
+    position: relative;
+    margin-top: 24px;
+    padding: 5px 18px 4px 18px;
+    border-radius: 15px;
+    background-color: #613319;
+    font: 700 13px/21px "Trebuchet MS", sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.48);
+}
+.box-product .btn-product:hover {
+    background-color: #d6c693;
+    color: #635848;
+}
+.box-product .icon-arrow-right {
+    padding-left: 4px;
+    font-size: 16px;
+}

@@ -1,0 +1,226 @@
+/*
+********************************************************************************
+# BASE STYLES
+********************************************************************************
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+body {
+  padding-top: 110px;
+  background-color: #fff;
+  font: 400 14px/21px "Trebuchet MS", sans-serif;
+  color: #2b1e19;
+}
+a {
+  display: inline-block;
+	color: #fff;
+}
+.btn {
+  transition: all .3s ease 0s;
+}
+/*
+body * {
+  border: 1px solid #00ff00;
+}
+*/
+
+/*
+********************************************************************************
+# SITE HEADER SECTION
+********************************************************************************
+*/
+
+#site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0 16px 0;
+  border-bottom: 9px solid #2c1f18;
+  background: url(../img/header-background.png) repeat;
+  z-index: 100;
+}
+#site-header::before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: url(../img/rounded-border.png) repeat-x center 0;
+}
+
+.site-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-logo .home-link {
+  display: flex;
+  align-items: center;
+}
+.box-logo .site-logo {
+  display: block;
+  margin-right: 15px;
+}
+.box-logo .site-logo-text {
+  padding-top: 20px;
+  font: 400 44px/44px "Voltaire", sans-serif;
+  color: rgb(43, 30, 25);
+}
+.box-logo .site-logo-highlighted {
+  color: #f3452a;
+}
+
+.navbar-menu {
+  display: flex;
+}
+.navbar-menu .menu-item {
+  position: relative;
+  padding: 0 8px 0 10px;
+  text-align: center;
+}
+.navbar-menu .menu-link {
+  padding: 4px 21px 2px;
+  border-radius: 15px;
+  font: 400 12px/24px "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #2c1f18;
+  transition: 0.3s all ease;
+}
+.navbar-menu .menu-link.active {
+  background-color: #e5dab7;
+  color: #2c1f18;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.4);  
+}
+.navbar-menu .menu-link:hover {
+  background: #2b1e19;
+  color: #fff;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.4);
+  transition: 0.3s all ease;
+}
+.navbar-menu .menu-link + .menu-link {
+  padding-right: 36px;
+}
+
+/*
+********************************************************************************
+# PAGE CONTENT SECTION
+********************************************************************************
+*/
+
+/* START COMPONENT PageContent */
+#page-content {
+  position: relative;
+  padding: 50px 0 2px 0;
+}
+#page-content::before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  width: 100%;
+  height: 4px;
+  background: url(./img/sharp-border.png) repeat-x;
+}
+/* END COMPONENT PageContent */
+
+/* START COMPONENT SectionHeader */
+.section-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.section-header .header-title {
+  font: 400 26px/26px "Voltaire", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.37);
+  color: #2b1e19;
+}
+/* END COMPONENT SectionHeader */
+
+/* START COMPONENT ProductsList */
+.wrapper-products {
+  flex-wrap: wrap;
+}
+/* END COMPONENT ProductsList */
+
+/* START COMPONENT Product */
+.box-product {
+  margin-bottom: 48px;
+}
+.box-product .product-header {
+  margin-bottom: 30px;
+}
+.box-product .product-link {
+  display: block;
+}
+.box-product .product-image {
+  display: block;
+  width: 100%;
+  border-bottom: 6px solid #2b1e19;
+  border-radius: 6px;
+  transition: 0.3s all ease;
+}
+.box-product:hover .product-image {
+  border-bottom: 6px solid #d6c693;
+}
+.box-product .product-title {
+  margin-bottom: 20px;
+  font: 400 19px/24px "Voltaire", sans-serif;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.37);
+  text-transform: uppercase;
+  color: #2b1e19;
+}
+.box-product .product-link {
+  color: #2b1e19;
+}
+.box-product .product-link:hover {
+  color: #f3452a;
+}
+.box-product .btn-product {
+  position: relative;
+  margin-top: 24px;
+  padding: 5px 18px 4px 18px;
+  border-radius: 15px;
+  background-color: #613319;
+  font: 700 13px/21px "Trebuchet MS", sans-serif;
+  text-transform: capitalize;
+  color: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.48);
+}
+.box-product .btn-product:hover {
+  background-color: #d6c693;
+  color: #635848;
+}
+.box-product .icon-arrow-right {
+  padding-left: 4px;
+  font-size: 16px;
+}
+/* END COMPONENT Product */
+
+/*
+********************************************************************************
+# SITE FOOTER SECTION
+********************************************************************************
+*/
+
+#site-footer {
+  padding: 30px 0;
+  background-color: #2c1f18;
+  text-align: center;
+  color: #fff;
+}
+
+.copyright-content .privacy-policy {
+  color: #fff;
+}
+.copyright-content .privacy-policy:hover {
+  color: #f3452a;
+}

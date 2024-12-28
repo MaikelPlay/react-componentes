@@ -1,0 +1,30 @@
+/*
+********************************************************************************
+# BASE STYLES
+********************************************************************************
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+body {
+  padding-top: 110px;
+  background-color: #fff;
+  font: 400 14px/21px "Trebuchet MS", sans-serif;
+  color: #2b1e19;
+}
+a {
+  display: inline-block;
+	color: #fff;
+}
+.btn {
+  transition: all .3s ease 0s;
+}
+/*
+body * {
+  border: 1px solid #00ff00;
+}
+*/

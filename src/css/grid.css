@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col { width: 0; flex-grow: 1; }
+.col-1  { width: 8.33333%; }    /* Columna de 1 unidad (1 / 12 de fila) */
+.col-2  { width: 16.66666%; }   /* Columna de 2 unidades (2 / 12 de fila) */
+.col-3  { width: 25%; }         /* Columna de 3 unidades (3 / 12 de fila) */
+.col-4  { width: 33.33333%; }   /* Columna de 4 unidades (4 / 12 de fila) */
+.col-5  { width: 41.66666% }    /* Columna de 5 unidades (5 / 12 de fila) */
+.col-6  { width: 50%; }         /* Columna de 6 unidades (6 / 12 de fila) */
+.col-7  { width: 58.33333%; }   /* Columna de 7 unidades (7 / 12 de fila) */
+.col-8  { width: 66.66666%; }   /* Columna de 8 unidades (8 / 12 de fila) */
+.col-9  { width: 75%; }         /* Columna de 9 unidades (9 / 12 de fila) */
+.col-10 { width: 83.33333%; }   /* Columna de 10 unidades (10 / 12 de fila) */
+.col-11 { width: 91.66666%; }   /* Columna de 12 unidades (11 / 12 de fila) */
+.col-12 { width: 100%; }        /* Columna de 12 unidades (12 / 12 de fila) */
+
+.col-1, .col-2, .col-3, .col-4,  .col-5,  .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
